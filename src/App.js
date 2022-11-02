@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import "./styles.css";
+import Modal from "./Modal.js";
+import Calender from "./table1.js";
+import "./bootstrap-5.2.2/dist/css/bootstrap.min.css";
+// import Head from "./head.js";
 
-function App() {
+export default function App() {
+  const [show, setShow] = React.useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className ="background">
+      <Calender />
+      {/* <div className="container text-center">
+      <Head /> */}
+      <button className="btn-primary" onClick={() => setShow(true)}>
+        Modal
+      </button>
+      <Modal show={show} onClose={() => setShow(false)}>
+        <h1> Hello World! </h1>
+      </Modal>
+      {/* </div> */}
+      </div>
   );
 }
 
-export default App;
+
+
+
+

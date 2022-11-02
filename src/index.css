@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.table{
+  position: absolute;
+  width: 1314px;
+  height: 738px;
+  left: 270px;
+  top: 318px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.textname{
+  width: 49px;
+height: 27px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+color: #24014E;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
